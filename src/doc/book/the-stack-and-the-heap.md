@@ -457,7 +457,7 @@ We end up allocating another value on the heap, and so we have to subtract one
 from (2<sup>30</sup>) - 1. It’s easier to write that than `1,073,741,822`. In any
 case, we set up the variables as usual.
 
-At the end of `bar()`, it calls `baz()`:
+At the end of `bar()`, it calls `baz()`: 
 
 | Address              | Name | Value                  |
 |----------------------|------|------------------------|
@@ -465,7 +465,7 @@ At the end of `bar()`, it calls `baz()`:
 | (2<sup>30</sup>) - 2 |      | 5                      |
 | ...                  | ...  | ...                    |
 | 12                   | g    | 100                    |
-| 11                   | f    | → (2<sup>30</sup>) - 2 |
+| 11                   | f    | → 9 
 | 10                   | e    | → 9                    |
 | 9                    | d    | → (2<sup>30</sup>) - 2 |
 | 8                    | c    | 5                      |
